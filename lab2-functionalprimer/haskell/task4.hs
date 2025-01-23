@@ -1,4 +1,5 @@
 ask :: String -> IO ()
+
 ask prompt =
   do
   putStrLn prompt
