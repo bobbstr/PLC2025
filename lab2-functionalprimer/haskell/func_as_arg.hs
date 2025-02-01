@@ -2,7 +2,9 @@
 inpFunc x y = [x..y]
 
 --Define applicatorFunc
-applicatorFunc inpFunc x y s = if s == 's' then sum (inpFunc x y) else (sum (inpFunc x y))/(y - x + 1)  
+applicatorFunc inpFunc x y s
+    | s == 's' =  sum (inpFunc x y)
+    | otherwise = (sum (inpFunc x y))/(y - x + 1)  
 
 main = do
     let result = applicatorFunc inpFunc 1 10 's' --Call applicatorFunc with inpFunc and 'a' as args
