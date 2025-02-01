@@ -1,5 +1,7 @@
-signum x = if x < 0 then -1 else if x > 0 then 1 else 0        
-
+sgn x | x < 0 = - 1
+         | x > 0 = 1
+         | otherwise = 0
+        
 main = do
     putStrLn "Please enter a number"
     input <- getLine 
