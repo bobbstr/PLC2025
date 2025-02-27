@@ -54,9 +54,9 @@ pause1 =
 
 main =
     do
-    -- putStrLn "piece1 and piece2 sorted by length:"
-    -- putStrLn $ show shorterPiece
-    -- putStrLn $ show longerPiece
+    putStrLn "piece1 and piece2 sorted by length:"
+    putStrLn $ show shorterPiece
+    putStrLn $ show longerPiece
     putStr "piece1 = "
     putStrLn $ show piece1
 --    putStr "pause1 = "
