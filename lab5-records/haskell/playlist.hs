@@ -62,7 +62,8 @@ main =
 --    putStr "pause1 = "
 --    putStrLn $ show pause1
 
--- ... = sortTwoItems (piece1, piece2) -- TASK
+
+(shorterPiece, longerPiece) = sortTwoItems (piece1, piece2) -- TASK
 
 sortTwoItems (item1, item2) = 
     if item_length_secs item1 <= item_length_secs item2
